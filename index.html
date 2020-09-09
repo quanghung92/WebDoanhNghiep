@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fl-bigmug-line.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stype_responsive.css">
+  <link rel="stylesheet" href="css/base.less">
+  <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="css/stype_responsive.less" />
+</head>
+
+<body>
+  <div class="page">
+    <div class="pageload">
+      <div class="brand-name">
+        <img src="image/logo-default-140x59.webp" alt="">
+      </div>
+      <div class="page-loader-body">
+        <div class="cssload-jumping">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <header class=" header_wapper">
+      <div class=" menu nav container">
+        <ul class="menu_left_list">
+          <li class="menu_left_item active"><a href="/">Dịch vụ</a></li>
+          <li class="menu_left_item"><a href="/">Sản phẩm</a></li>
+          <li class="menu_left_item"><a href="/">Về chúng tôi</a></li>
+          <li class="menu_left_item"><a href="/">Đánh giá</a></li>
+        </ul>
+        <div class="logo-wapper"><a href="/" class="link-logo"><img class="logo_site" src="image/logo.png"
+              alt="logo"></a></div>
+        <div class="social_media_icon">
+          <i class=" icon_social fab fa-instagram"></i>
+          <i class="icon_social fab fa-facebook-f"></i>
+          <i class="icon_social fab fa-twitter"></i>
+          <i class="icon_social fab fa-google-plus-g"></i>
+          <img class="shopping_cart_img" src="image/shopping-cart.svg" alt="shopping cart"><span
+            class="cart_product">(2)</span>
+        </div>
+      </div>
+      <div class="waper_menu_2">
+        <div class=" menu2 nav container">
+          <button onclick="hung_show_menu(this)" class="open-menu-responsive"><span></span></button>
+          <ul class="menu_left_list">
+            <li class="menu_left_item active"><a href="/">Dịch vụ</a></li>
+            <li class="menu_left_item"><a href="/">Sản phẩm</a></li>
+            <li class="menu_left_item"><a href="/">Về chúng tôi</a></li>
+            <li class="menu_left_item"><a href="/">Đánh giá</a></li>
+          </ul>
+          <div class="logo-wapper"><a href="/" class="link-logo"><img class="logo_site" src="image/logo.png"
+                alt="logo"></a></div>
+          <div class="social_media_icon">
+           <div class="social-icon-header">
+            <i class=" icon_social fab fa-instagram"></i>
+            <i class="icon_social fab fa-facebook-f"></i>
+            <i class="icon_social fab fa-twitter"></i>
+            <i class="icon_social fab fa-google-plus-g"></i>
+           </div>
+            <div class="cart-header">
+              <img class="shopping_cart_img" src="image/shopping-cart.svg" alt="shopping cart"><span
+              class="cart_product">(2)</span>
+            </div>
+          </div>
+          <div onclick="hung_show_cart_responsive(this)" class="open-cart-responsive">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <!-- highight -->
+    <div class="highlight">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./image/slide-1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./image/slide-2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./image/slide-3.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next "><span class="next_button_carosel">NEXT</span></div>
+        <div class="swiper-button-prev "><span class="prev_button_carosel">PREV</span></div>
+      </div>
+
+      <!-- register form -->
+      <div class="register_fomr">
+        <h3>Đăng ký để nhận thêm ưu đãi</h3>
+        <form action="" method="post">
+          <div class="form-group">
+            <label for="name_input">Họ và tên</label>
+            <input type="text" class="form-control shadow-none" id="name_input">
+          </div>
+          <div class="form-group">
+            <label for="email_input">Địa chỉ Email</label>
+            <input type="email" class="form-control shadow-none" id="email_input">
+          </div>
+          <div class="form-group">
+            <label for="pass_input">Mật khẩu</label>
+            <input type="password" class="form-control shadow-none" id="pass_input">
+          </div>
+
+          <div class="form-group">
+            <label for="repeat_pass_input">Nhập lại mật khẩu</label>
+            <input type="password" class="form-control shadow-none" id="repeat_pass_input">
+          </div>
+          <button type="submit" class=" btn-submit btn btn-primary">Đăng ký</button>
+        </form>
+      </div>
+      <!-- block 1 hightline -->
+      <div class="block1 container">
+        <div class="wapper_block">
+          <div class="left_block1">
+            <img src="image/fire.svg" alt="">
+          </div>
+          <div class="right_block1">
+            <h3 class="header_right_block1">
+              Sẵn sàng để SEO
+            </h3>
+            <div class="content_right_block1">
+              <p>Tất cả các mẫu của chúng tôi đều Sẵn sàng SEO, giúp khách hàng tìm thấy trang web của bạn dễ dàng hơn.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wapper_block">
+          <div class="left_block1">
+            <img src="image/code.svg" alt="">
+          </div>
+          <div class="right_block1">
+            <h3 class="header_right_block1">
+              Dịch vụ Codeing
+            </h3>
+            <div class="content_right_block1">
+              <p>Chúng tôi cung cấp cho khách hàng nhiều dịch vụ mã hóa khác nhau, giúp họ tạo ra các trang web hoạt
+                động hoàn hảo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wapper_block">
+          <div class="left_block1">
+            <img src="image/square.svg" alt="">
+          </div>
+          <div class="right_block1">
+            <h3 class="header_right_block1">
+              Cực kỳ linh hoạt
+            </h3>
+            <div class="content_right_block1">
+              <p>Cung cấp tính linh hoạt cao hơn, cho phép bạn tùy chỉnh trang web của mình theo cách bạn muốn.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wapper_block">
+          <div class="left_block1">
+            <img src="image/phone.svg" alt="">
+          </div>
+          <div class="right_block1">
+            <h3 class="header_right_block1">
+              Thân thiện với tất cả thiết bị
+            </h3>
+            <div class="content_right_block1">
+              <p>TTất cả các mẫu của chúng tôi đều đáp ứng đầy đủ và có thể hiển thị trên mọi thiết bị, từ PC đến điện
+                thoại thông minh hoặc máy tính bảng.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wapper_block">
+          <div class="left_block1">
+            <img src="image/brush.svg" alt="">
+          </div>
+          <div class="right_block1">
+            <h3 class="header_right_block1">
+              Thiết kế giao diện
+            </h3>
+            <div class="content_right_block1">
+              <p>Chúng tôi cung cấp các mẫu thiết kế dễ sử dụng, mới mẻ và hấp dẫn
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wapper_block">
+          <div class="left_block1">
+            <img src="image/headphones.svg" alt="">
+          </div>
+          <div class="right_block1">
+            <h3 class="header_right_block1">
+              Hỗ trợ 24/7
+            </h3>
+            <div class="content_right_block1">
+              <p>Dịch vụ hỗ trợ 24/7 tận tâm của chúng tôi giúp khách hàng nhanh chóng tạo ra giải pháp web của riêng
+                họ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="wapper-content">
+      <!-- popular-product  -->
+      <div class="popular-product-background">
+        <div class="wapper-popular-product container">
+          <h2 class="popular-ptoduct__header">Sản phẩm phổ biến</h2>
+          <div class="popular-product-list row">
+            <div class="popular-product-item col-lg-4 col-md-6">
+              <img src="image//product-01-370x329.webp" alt="" class="img-product-item">
+              <div class="popular-product-content-wapper">
+                <div class="wapper-popular-product-detail">
+                  <div class="popular-product-like"></div>
+                  <div class="popular-product-detail">
+                    <div class="wapper-cart">
+                      <a class="popular-product-search"></a>
+                      <a class="popular-product-cart"></a>
+                    </div>
+                    <div class="popular-product-button">Xem thêm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-product-price">
+                <div class="popular-product-before-cost">500.000đ</div>
+                <div class="popular-product-after-cost">250.000đ</div>
+              </div>
+              <div class="popular-product-title">
+                SLEEVE SWEATER
+              </div>
+            </div>
+            <div class="popular-product-item col-lg-4 col-md-6">
+              <img src="image//product-02-370x329.webp" alt="" class="img-product-item">
+              <div class="popular-product-content-wapper">
+                <div class="wapper-popular-product-detail">
+                  <div class="popular-product-like"></div>
+                  <div class="popular-product-detail">
+                    <div class="wapper-cart">
+                      <a class="popular-product-search"></a>
+                      <a class="popular-product-cart"></a>
+                    </div>
+                    <div class="popular-product-button">Xem thêm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-product-price">
+                <div class="popular-product-before-cost">500.000đ</div>
+                <div class="popular-product-after-cost">250.000đ</div>
+              </div>
+              <div class="popular-product-title">
+                BATWING SLEEVE CROPPED SWEATER
+              </div>
+            </div>
+            <div class="popular-product-item col-lg-4 col-md-6">
+              <img src="image//product-03-370x329.webp" alt="" class="img-product-item">
+              <div class="popular-product-content-wapper">
+                <div class="wapper-popular-product-detail">
+                  <div class="popular-product-like"></div>
+                  <div class="popular-product-detail">
+                    <div class="wapper-cart">
+                      <a class="popular-product-search"></a>
+                      <a class="popular-product-cart"></a>
+                    </div>
+                    <div class="popular-product-button">Xem thêm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-product-price">
+                <div class="popular-product-before-cost">500.000đ</div>
+                <div class="popular-product-after-cost">250.000đ</div>
+              </div>
+              <div class="popular-product-title">
+                FUNNEL NECK TUNIC
+              </div>
+            </div>
+            <div class="popular-product-item col-lg-4 col-md-6">
+              <img src="image//product-04-370x329.webp" alt="" class="img-product-item">
+              <div class="popular-product-content-wapper">
+                <div class="wapper-popular-product-detail">
+                  <div class="popular-product-like"></div>
+                  <div class="popular-product-detail">
+                    <div class="wapper-cart">
+                      <a class="popular-product-search"></a>
+                      <a class="popular-product-cart"></a>
+                    </div>
+                    <div class="popular-product-button">Xem thêm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-product-price">
+                <div class="popular-product-before-cost">500.000đ</div>
+                <div class="popular-product-after-cost">250.000đ</div>
+              </div>
+              <div class="popular-product-title">
+                SLEEVE SWEATER
+              </div>
+            </div>
+            <div class="popular-product-item col-lg-4 col-md-6">
+              <img src="image//product-05-370x329.webp" alt="" class="img-product-item">
+              <div class="popular-product-content-wapper">
+                <div class="wapper-popular-product-detail">
+                  <div class="popular-product-like"></div>
+                  <div class="popular-product-detail">
+                    <div class="wapper-cart">
+                      <a class="popular-product-search"></a>
+                      <a class="popular-product-cart"></a>
+                    </div>
+                    <div class="popular-product-button">Xem thêm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-product-price">
+                <div class="popular-product-before-cost">500.000đ</div>
+                <div class="popular-product-after-cost">250.000đ</div>
+              </div>
+              <div class="popular-product-title">
+                WIDE COLOR WRAP FRONT MAXI COAT
+              </div>
+            </div>
+            <div class="popular-product-item col-lg-4 col-md-6">
+              <img src="image//product-06-370x329.webp" alt="" class="img-product-item">
+              <div class="popular-product-content-wapper">
+                <div class="wapper-popular-product-detail">
+                  <div class="popular-product-like"></div>
+                  <div class="popular-product-detail">
+                    <div class="wapper-cart">
+                      <a class="popular-product-search"></a>
+                      <a class="popular-product-cart"></a>
+                    </div>
+                    <div class="popular-product-button">Xem thêm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-product-price">
+                <div class="popular-product-before-cost">500.000đ</div>
+                <div class="popular-product-after-cost">250.000đ</div>
+              </div>
+              <div class="popular-product-title">
+                BURNOUT JOGGERS
+              </div>
+            </div>
+
+          </div>
+          <div class="btn-for-all product-view-all-btn">
+            Xem thêm sản phẩm
+          </div>
+        </div>
+      </div>
+      <!-- Newletter -->
+      <div class="wapper-new-letter">
+        <div class="content-news-letter-wapper">
+          <h2 class="new-letter-header">Đăng Ký để nhận nhiều ưu đãi hơn</h2>
+          <div class="content-new-letter">
+            <p>Đăng ký nhận bản tin của chúng tôi và là người đầu tiên biết về tin tức, ưu đãi đặc biệt và sự kiện mới
+              nhất của chúng tôi</p>
+          </div>
+          <form action="" method="post">
+            <div class="form-group">
+              <input type="email" class="form-control" id="emial-new-letter" aria-describedby="emailHelp"
+                placeholder="Nhập địa chỉ Email của bạn">
+            </div>
+            <button type="submit" class="btn btn-for-all">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- about Us  -->
+      <div class="wapper-about-us">
+        <div class="img-about-us">
+          <img src="image/about-1-870x584.webp" alt="">
+        </div>
+        <div class="conten-about-us">
+          <h3 class="content-about-us__header">Về chúng tôi</h3>
+          <div class="wapper-nar-link-content">
+            <nav class="nav-link-about-us">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nar-mission" role="tab" aria-controls="nav-home" aria-selected="true">Nhiệm vụ</a>
+                <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-goal" role="tab" aria-controls="nav-profile" aria-selected="false">Mục tiêu</a>
+                <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-vision" role="tab" aria-controls="nav-contact" aria-selected="false">Tầm nhìn</a>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nar-mission" role="tabpanel" aria-labelledby="nav-home-tab">Nhiệm vụ của chúng tôi là thể hiện các khái niệm của khách hàng thành các thực tế kinh doanh chức năng năng động. Chúng tôi khai thác các công nghệ internet mới nhất để tối đa hóa hiệu suất của các mẫu web của chúng tôi.</div>
+              <div class="tab-pane fade" id="nav-goal" role="tabpanel" aria-labelledby="nav-profile-tab">Mục tiêu của chúng tôi là làm cho Web trở thành một nơi tốt hơn cho mọi người. Chúng tôi đạt được điều đó thông qua việc cung cấp cho khách hàng những mẫu trang web hạng nhất, được thiết kế để thúc đẩy hoạt động kinh doanh của họ và nâng cao danh tiếng của họ.</div>
+              <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-contact-tab">Tầm nhìn của chúng tôi là mở rộng vị trí hiện tại của mình với tư cách là công ty phát triển web hàng đầu thành công ty cung cấp giải pháp internet trên toàn quốc dẫn đầu ngành phát triển web ở Hoa Kỳ đồng thời cung cấp các thiết kế hạng nhất.</div>
+            </div>
+          </div>
+          <div class="btn-for-all">Xem thêm</div>
+        </div>
+      </div>
+      <!-- testimonials -->
+      <div class="wapper-testimoniall container">
+        <div class="testimanial-header">
+          Khách hàng nói về chúng tôi
+        </div>
+        <div class="wapper-testimanial-content col-lg-4 col-md-6 col-sm-12">
+          <div class="img-testimanial">
+            <img src="image/testimonials-01-111x111.webp" alt="">
+          </div>
+          <div class="content-testimanial">
+            "Với tư cách là Giám đốc dự án tại một công ty địa phương nhỏ, tôi đang tìm kiếm một giải pháp chung cho trang web của công ty mình. Bắc Cực chính là thứ tôi cần! Nó trông tuyệt đẹp và hoạt động hoàn hảo."
+          </div>
+          <div class="name-person-testimanial">Karen Sanders <span class="posison-person-testimanial">Quản lý dự án</span></div>
+        </div>
+        <div class="wapper-testimanial-content col-lg-4 col-md-6 col-sm-12">
+          <div class="img-testimanial">
+            <img src="image/testimonials-02-111x111.webp" alt="">
+          </div>
+          <div class="content-testimanial">
+            "Nhờ Arctic, giờ đây tôi có thể trưng bày tất cả các tác phẩm của mình mà không cần thực hiện thêm bất kỳ thao tác mã hóa và thiết kế nào. Thật không thể tin được, trang web của tôi trông tuyệt đẹp. Cảm ơn bạn!"
+          </div>
+          <div class="name-person-testimanial">Karen Sanders <span class="posison-person-testimanial">Quản lý dự án</span></div>
+        </div>
+        <div class="wapper-testimanial-content col-lg-4 col-md-6 col-sm-12">
+          <div class="img-testimanial">
+            <img src="image/testimonials-03-111x111.webp" alt="">
+          </div>
+          <div class="content-testimanial">
+            "Là một nhà thiết kế cảnh quan tự do, điều quan trọng đối với tôi là phải có một danh mục đầu tư tuyệt vời về tất cả các tác phẩm của mình và mẫu này có những gì tôi cần. Tôi đặc biệt thích bố cục blog và các trang danh mục đầu tư."
+          </div>
+          <div class="name-person-testimanial">Karen Sanders <span class="posison-person-testimanial">Quản lý dự án</span></div>
+        </div>
+      </div>
+
+      <!-- Lasted event -->
+      <div class="wapper-event">
+        <div class="wapper-lasted-event container">
+          <div class="lasted-event-header">
+            <h2>Tin tức</h2>
+          </div>
+          <div class="lasted-event-list">
+            <div class="lasted-event-item">
+              <div class="lasted-event-item-img">
+                <img src="image/news-1-570x333.webp" alt="">
+              </div>
+              <div class="wapper-content-lasted-event">
+                <a class="lasted-event-title">Các kỹ thuật phổ biến để tinh chỉnh UX với màu sắc</a>
+                <div class="lasted-event-content-text">Màu sắc là một trong những yếu tố quan trọng trong bất kỳ hệ thống thiết kế nào. Trên các trang web hoặc trong ứng dụng, màu có thể được sử dụng theo nhiều cách khác nhau: đôi khi có thể sử dụng màu</div>
+                <div class="wapper-date-create">
+                  <span class="wapper-date-create-mont">12/10/2020</span><span class="wapper-date-create-like">26</span><span class="wapper-date-create-coment">6</span>
+                </div>
+              </div>
+            </div>
+            <div class="lasted-event-item">
+              <div class="lasted-event-item-img">
+                <img src="image/news-2-239x267.webp" alt="">
+              </div>
+              <div class="wapper-content-lasted-event">
+                <a class="lasted-event-title">Các kỹ thuật phổ biến để tinh chỉnh UX với màu sắc</a>
+                <div class="lasted-event-content-text">Từ kiểm tra thời lượng phim, đọc mẹo Photoshop, xem lại tin tức hàng ngày, chúng ta có thể tìm thấy hầu hết mọi thông tin</div>
+                <div class="wapper-date-create">
+                  <span class="wapper-date-create-mont">12/10/2020</span><span class="wapper-date-create-like">26</span><span class="wapper-date-create-coment">6</span>
+                </div>
+              </div>
+            </div>
+            <div class="lasted-event-item">
+              <div class="lasted-event-item-img">
+                <img src="image/news-3-239x267.webp" alt="">
+              </div>
+              <div class="wapper-content-lasted-event">
+                <a class="lasted-event-title">Các kỹ thuật phổ biến để tinh chỉnh UX với màu sắc</a>
+                <div class="lasted-event-content-text">Trong cộng đồng thiết kế, có xu hướng coi công việc tự do như một mục tiêu cần đạt được. Ai sẽ không muốn nằm trong</div>
+                <div class="wapper-date-create">
+                  <span class="wapper-date-create-mont">12/10/2020</span><span class="wapper-date-create-like">26</span><span class="wapper-date-create-coment">6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-top">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.659778435482!2d105.86244095053807!3d21.00627079385283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5a772fb237%3A0xabe5c298dbbe9251!2sBeehomestay!5e0!3m2!1svi!2s!4v1599476337645!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="footer-bottom">
+        <div class="container wapper-footer-bottom">
+          <div class="row">
+           <div class="quick-link-wapper col-lg-4 col-md-12 col-sm-12">
+             <h3 class="quick-link-header">Liên kết nhanh</h3>
+            <ul class="quick-link ">
+              <li class="quick-link-item"><a href="/" class="quick-link-link">Trang chủ</a></li>
+              <li class="quick-link-item"><a href="/" class="quick-link-link">Yêu thích</a></li>
+              <li class="quick-link-item"><a href="/" class="quick-link-link">Cửa hàng</a></li>
+              <li class="quick-link-item"><a href="/" class="quick-link-link">Giới thiệu</a></li>
+              <li class="quick-link-item"><a href="/" class="quick-link-link">Dịch vụ</a></li>
+              <li class="quick-link-item"><a href="/" class="quick-link-link">Tin tức</a></li>
+            </ul>
+           </div>
+            <div class="wapper-open-hours col-lg-3 col-md-4 col-sm-12">
+              <h3 class="open-hour-header">GIờ mở cửa</h3>
+              <div class="open-hours ">
+                <p class="open-hours-weeks">Ngày trong tuần:<span> 8h - 19h</span> </p>
+                <p class="open-hours-weekend">Thứ 7, Chủ nhật:<span> 8h - 16h</span></p>
+              </div>
+            </div>
+            <div class="wapper-phone-footer col-lg-2 col-md-4 col-sm-12">
+              <h3 class="wapper-phone-header">Liên hệ</h3>
+              <div class="contact-footer ">
+                <a href="tel:0906048227" class="contact-footer-phone">0906048227</a>
+                <a href='mailto:nguyenquanghung1992@gmail.com' class="contact-footer-mail">nguyenquanghung1992@gmail.com</a>
+              </div>
+            </div>
+            <div class="wapper-footer-address col-lg-3 col-md-4 col-sm-12">
+              <h3 class="footer-address-header">Địa chỉ</h3>
+              <p class="footer-address ">
+                30/9B , Nhị Đồng II, TX. Dĩ An, H.Dĩ An , T.Bình Dương
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wapper-footer-copy-right">
+        <div class="footer-copy-right container">
+          Favorite © 2020. <a href="/">Privacy Policy</a>
+        </div>
+      </div>
+      <!-- scroll top -->
+      <div class="scroll-top"></div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js">
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/less"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
